@@ -26,51 +26,103 @@ body {
     min-height: 100vh;
 }
 
-
 .container {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    background-color: var(--violet);
+    background: url("../images/bg-mobile.svg") no-repeat var(--violet);
     height: 100%;
     padding: 30px;
     min-width: 375px;
+    width: 100%;
+    border: 2px solid blue;
 }
 
-.logo {
+nav {
     display: flex;
     flex-direction: row;
-    justify-content: left;
     width: 100%;
+    border: 1px solid black;
 }
 
 #huddle-logo {
-    padding: 30px 0;
+    padding: 0 0 50px 0;
     width: 132px;
 }
 
 .top-image {
-    border: 1px solid yellow;
+    width: 100%;
+    border: 1px solid red;
 }
 
-.bottom {
-    border: 1px solid red;
+#mockup {
+    width: 100%;
+}
+
+main {
+    margin-top: 50px;
+    border: 1px solid yellow;
 }
 
 h1 {
     font-family: "Poppins", sans-serif;
     font-weight: 600;
-    font-size: 30px;
+    font-size: 25px;
+    margin-bottom: 20px;
     color: white;
 }
 
 p {
     font-family: "Open Sans", sans-serif;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 15px;
     color: white;
+    padding: 0 15px;
+    margin-bottom: 30px;
 }
+
+button {
+    color: var(--violet);
+    padding: 10px 55px;
+    background-color: white;
+    border: 0;
+    border-radius: 20px;
+    margin-bottom: 50px;
+    box-shadow: 1px 11px 5px 0px rgba(0, 0, 0, 0.18);
+}
+
+button:hover {
+    background: var(--SoftMagenta);
+    color: white;
+    cursor: pointer;
+    border: 1px solid white;
+}
+
+.social-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+i:hover {
+    color: var(--SoftMagenta);
+    border: 1px solid var(--SoftMagenta);
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+i {
+
+    border: 1px solid white;
+    font-size: 15px;
+    padding: 7px 7px;
+    margin: 10px;
+    color: white;
+    border-radius: 20px;
+    width: 30px;
+    height: 30px;
+}
+
+
 
 .attribution {
     font-size: 11px;
@@ -80,4 +132,43 @@ p {
 .attribution a {
     color: white;
     text-decoration: none;
+}
+
+@media (min-width: 900px) {
+    .container {
+        background-image: url("./images/bg-desktop.svg");
+        background-size: contain;
+        min-height: 100vh;
+        height: 564px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 0;
+    }
+
+    nav {
+        height: min-content;
+    }
+
+    main {
+        text-align: left;
+        flex-basis: 40%;
+        margin-top: 35px;
+        padding-right: px;
+        height: min-content;
+    }
+
+    p {
+        padding-left: 0%;
+        font-size: 12px;
+    }
+
+    .top-image {
+        flex-basis: 55%;
+        margin-right: 40px;
+        height: min-content;
+    }
+
+    .social-icons {
+        justify-content: flex-end;
+    }
 }
