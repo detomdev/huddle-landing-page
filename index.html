@@ -1,57 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- displays site properly based on user's device -->
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/favicon-32x32.png"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+		/>
+		<link rel="stylesheet" href="style1.css" />
+		<title>
+			Frontend Mentor | Huddle landing page with single introductory section
+		</title>
+	</head>
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-  <link rel="stylesheet" href="style.css">
-  <title>Frontend Mentor | Huddle landing page with single introductory section</title>
+	<body>
+		<div class="container">
+			<header>
+				<img src="./images/logo.svg" alt="logo" />
+			</header>
 
-</head>
+			<div class="flex">
+				<div class="mockup">
+					<img src="./images/illustration-mockups.svg" alt="illustration" />
+				</div>
 
-<body>
-  <div class="container">
+				<div class="text-area">
+					<h1>Build The Community Your Fans Will Love</h1>
+					<p>
+						Huddle re-imagines the way we build communities. You have a voice,
+						but so does your audience. Create connections with your users as you
+						engage in genuine discussion.
+					</p>
+					<button>Register</button>
+				</div>
+			</div>
 
-    <nav>
-      <img src="./images/logo.svg" alt="Huddle logo" id="huddle-logo">
-    </nav>
-
-    <div class="top-image">
-      <img src="./images/illustration-mockups.svg" alt="mockup" id="mockup">
-    </div>
-
-    <main>
-      <div class="text-area">
-        <h1>Build The Community Your Fans Will Love</h1>
-
-        <p>Huddle re-imagines the way we build communities. You have a voice, but so does your audience.
-          Create connections with your users as you engage in genuine discussion.</p>
-
-        <button>Register</button>
-      </div>
-
-      <div class="social-icons">
-        <i class="fa-brands fa-facebook-f"></i>
-        <i class="fa-brands fa-twitter"></i>
-        <i class="fa-brands fa-instagram"></i>
-      </div>
-
-    </main>
-  </div>
-
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-      Coded by <a href="#">Rick DeToma</a>.
-    </p>
-  </footer>
-
-</body>
-
+			<ul class="social-links">
+				<li>
+					<a href="#">
+						<i class="fab fa-facebook-f"></i>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="fab fa-twitter"></i>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="fab fa-instagram"></i>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</body>
 </html>

@@ -1,174 +1,173 @@
 @import url(https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap);
 
-
 :root {
-    /*Primary*/
-    --violet: hsl(257, 40%, 49%);
-    --soft-magenta: hsl(300, 69%, 71%);
+	/*Primary*/
+	--violet: hsl(257, 40%, 49%);
+	--soft-magenta: hsl(300, 69%, 71%);
 }
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
 
 html {
-    font-family: "Poppins", "Open Sans", sans-serif;
-    height: 100vh;
-    min-height: 100vh;
-    font-size: 15px;
-    text-align: center;
+	font-family: "Poppins", "Open Sans", sans-serif;
+	height: 100vh;
+	min-height: 100vh;
+	font-size: 15px;
+	text-align: center;
 }
 
 body {
-    height: 100vh;
-    min-height: 100vh;
+	height: 100vh;
+	min-height: 100vh;
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
-    background: url("../images/bg-mobile.svg") no-repeat var(--violet);
-    height: 100%;
-    padding: 30px;
-    min-width: 375px;
-    width: 100%;
-    border: 2px solid blue;
+	display: flex;
+	flex-direction: column;
+	background: url("../images/bg-mobile.svg") no-repeat var(--violet);
+	height: 100%;
+	padding: 30px;
+	min-width: 375px;
+	width: 100%;
+	border: 2px solid blue;
 }
 
 nav {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    border: 1px solid black;
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	border: 1px solid black;
 }
 
 #huddle-logo {
-    padding: 0 0 50px 0;
-    width: 132px;
+	padding: 0 0 50px 0;
+	width: 132px;
 }
 
 .top-image {
-    width: 100%;
-    border: 1px solid red;
+	width: 100%;
+	border: 1px solid red;
 }
 
 #mockup {
-    width: 100%;
+	width: 100%;
 }
 
 main {
-    margin-top: 50px;
-    border: 1px solid yellow;
+	margin-top: 50px;
+	border: 1px solid yellow;
 }
 
 h1 {
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
-    font-size: 25px;
-    margin-bottom: 20px;
-    color: white;
+	font-family: "Poppins", sans-serif;
+	font-weight: 600;
+	font-size: 25px;
+	margin-bottom: 20px;
+	color: white;
 }
 
 p {
-    font-family: "Open Sans", sans-serif;
-    font-weight: 400;
-    font-size: 15px;
-    color: white;
-    padding: 0 15px;
-    margin-bottom: 30px;
+	font-family: "Open Sans", sans-serif;
+	font-weight: 400;
+	font-size: 15px;
+	color: white;
+	padding: 0 15px;
+	margin-bottom: 30px;
 }
 
 button {
-    color: var(--violet);
-    padding: 10px 55px;
-    background-color: white;
-    border: 0;
-    border-radius: 20px;
-    margin-bottom: 50px;
-    box-shadow: 1px 11px 5px 0px rgba(0, 0, 0, 0.18);
+	color: var(--violet);
+	padding: 10px 55px;
+	background-color: white;
+	border: 0;
+	border-radius: 20px;
+	margin-bottom: 50px;
+	box-shadow: 1px 11px 5px 0px rgba(0, 0, 0, 0.18);
 }
 
 button:hover {
-    background: var(--SoftMagenta);
-    color: white;
-    cursor: pointer;
-    border: 1px solid white;
+	background: var(--SoftMagenta);
+	color: white;
+	cursor: pointer;
+	border: 1px solid white;
 }
 
 .social-icons {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
 }
 
 i:hover {
-    color: var(--SoftMagenta);
-    border: 1px solid var(--SoftMagenta);
-    cursor: pointer;
-    border-radius: 50%;
+	color: var(--SoftMagenta);
+	border: 1px solid var(--SoftMagenta);
+	cursor: pointer;
+	border-radius: 50%;
 }
 
 i {
-
-    border: 1px solid white;
-    font-size: 15px;
-    padding: 7px 7px;
-    margin: 10px;
-    color: white;
-    border-radius: 20px;
-    width: 30px;
-    height: 30px;
+	border: 1px solid white;
+	font-size: 15px;
+	padding: 7px 7px;
+	margin: 10px;
+	color: white;
+	border-radius: 20px;
+	width: 30px;
+	height: 30px;
 }
 
-
-
 .attribution {
-    font-size: 11px;
-    text-align: center;
+	font-size: 11px;
+	text-align: center;
 }
 
 .attribution a {
-    color: white;
-    text-decoration: none;
+	color: white;
+	text-decoration: none;
 }
 
-@media (min-width: 900px) {
-    .container {
-        background-image: url("./images/bg-desktop.svg");
-        background-size: contain;
-        min-height: 100vh;
-        height: 564px;
-        flex-direction: row;
-        flex-wrap: wrap;
-        margin: 0;
-    }
+@media (min-width: 1000px) {
+	.container {
+		background-image: url("./images/bg-desktop.svg");
+		background-size: contain;
+		min-height: 800px;
+		max-width: 1200px;
+		flex-direction: row;
+		flex-wrap: wrap;
+		margin: 0;
+	}
 
-    nav {
-        height: min-content;
-    }
+	nav {
+		height: min-content;
+	}
 
-    main {
-        text-align: left;
-        flex-basis: 40%;
-        margin-top: 35px;
-        padding-right: px;
-        height: min-content;
-    }
+	main {
+		text-align: left;
+		flex-basis: 40%;
+		margin-top: 35px;
+		padding-right: px;
+		height: min-content;
+	}
 
-    p {
-        padding-left: 0%;
-        font-size: 12px;
-    }
+	p {
+		padding-left: 0%;
+		font-size: 12px;
+	}
 
-    .top-image {
-        flex-basis: 55%;
-        margin-right: 40px;
-        height: min-content;
-    }
+	.top-image {
+		flex-basis: 55%;
+		margin-right: 40px;
+		height: min-content;
+	}
 
-    .social-icons {
-        justify-content: flex-end;
-    }
+	.social-icons {
+		justify-content: flex-end;
+	}
+	.text-area {
+		padding-right: 60px;
+	}
 }
